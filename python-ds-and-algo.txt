@@ -1,0 +1,27 @@
+##########################################################################################################################
+ _______  __   __  _______  __   __  _______  __    _           ______   _______       _______  ___      _______  _______ 
+|       ||  | |  ||       ||  | |  ||       ||  |  | |         |      | |       |     |   _   ||   |    |       ||       |
+|    _  ||  |_|  ||_     _||  |_|  ||   _   ||   |_| |   ____  |  _    ||  _____|     |  |_|  ||   |    |    ___||   _   |
+|   |_| ||       |  |   |  |       ||  | |  ||       |  |____| | | |   || |_____      |       ||   |    |   | __ |  | |  |
+|    ___||_     _|  |   |  |       ||  |_|  ||  _    |         | |_|   ||_____  |     |       ||   |___ |   ||  ||  |_|  |
+|   |      |   |    |   |  |   _   ||       || | |   |         |       | _____| |     |   _   ||       ||   |_| ||       |
+|___|      |___|    |___|  |__| |__||_______||_|  |__|         |______| |_______|     |__| |__||_______||_______||_______|
+
+##########################################################################################################################
+
+Course Curriculum : 
+
+- Recursion : We would be learning this recursion applying it later 
+- Big-O-notation : For performance metrics 
+- Arrays : 1 and 2 dimension arrays 
+- Python Lists
+- Dictionaries, Tuples, Sets and Lists 
+- LinkedList : Performing all operations | 
+            Circular Linked List 
+        - Cracking interview questions with Linked List 
+- Stacks and Queues
+- Tree / Binary Tree 
+    - PreOrder Traversal 
+    - Post Order Traversal 
+    - 
+    
