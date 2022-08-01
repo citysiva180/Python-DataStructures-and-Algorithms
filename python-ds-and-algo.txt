@@ -16,12 +16,69 @@ Course Curriculum :
 - Arrays : 1 and 2 dimension arrays 
 - Python Lists
 - Dictionaries, Tuples, Sets and Lists 
-- LinkedList : Performing all operations | 
-            Circular Linked List 
+- LinkedList : Performing all operations | Single | Double
+            Circular Linked List | Doubly Circular Linked List 
         - Cracking interview questions with Linked List 
-- Stacks and Queues
+- Stacks and Queues 
 - Tree / Binary Tree 
     - PreOrder Traversal 
+    - In Order Traversal 
     - Post Order Traversal 
-    - 
-    
+    - Level Order Traversal  
+
+- Binary Search Treee 
+- AVL Tree 
+    -  Left left Condition
+    - Right Right Condition 
+    - Left Right Condition 
+    - Right Left Condition 
+
+- Binary Heap 
+- Trie 
+- Hashing Section 
+- Sorting Algorithms 
+    - Bubble Sort 
+    - Selection Sort 
+    - Insertion Sort 
+    - Bucket Sort 
+    - Merge Sort 
+    - Quick Sort 
+    - Heap Sort 
+Graph Algorithms 
+    - Breadth First Search 
+    - Depth First Search 
+    - Topologic Search 
+    - Signle Source Shorted Path Problems 
+    - All Pair Shortest Path problems
+    - Djikstra's Shortest Path 
+    -  Bellman Forts Algo 
+    - Floyd WarShall Algorithm 
+    - Minimum Spanning Tree 
+    - Prim's Algorithms 
+    - Kruskal's Algorithms 
+
+Greedy Algorithm 
+    - Activity Selection
+    - Coin change 
+    - Fractional Knapsack Problem 
+
+Divide and Conquer 
+    - Number Factor Problem 
+    - House Robber Problems 
+    - Convert 1 String to Another string 
+    - Zero Knapsack 
+    - Longest Common Subsequence 
+    - Minimum Cost Path Problem 
+
+Dynamic Programming 
+
+- Optimal subtraction 
+- Overlapping 
+- Top Down 
+- Botton Up Tabulation 
+
+- Common DC 
+- Convert 1 string to another 
+- Zero Knapsack Using DC 
+
+Wild West Section  :  
