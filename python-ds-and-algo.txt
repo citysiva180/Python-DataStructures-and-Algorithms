@@ -82,3 +82,49 @@ Dynamic Programming
 - Zero Knapsack Using DC 
 
 Wild West Section  :  
+
++--------------------------+
+| What Are data Structures |
++--------------------------+
+
+Data structures are different ways of organizing data on your 
+computer that can be used effectively 
+
+There are many...? 
+So how do we choose? 
+
+
++---------------------+
+| What Are Algorithms |
++---------------------+
+
+Set of steps to accomplish a task 
+
+- Set of rules for a computer program to accomplish a task 
+
+How do google and facebook transmit live video across the internet 
+- using compression algorithms 
+- Finding the shortest path on the map.. djisktra algorithms 
+- They are used in space tech as well  
+- Selecting the proper algorithm will help us accomplish great tasks 
+
+
+- Correctness 
+- Efficiency 
+
++------------------------+
+| Why are they important |
++------------------------+
+
+the ability of algorithms and datastructures are too high 
+that they save a lot of time and effort in acommplishing a certain tasks 
+
++----------+
+| Recursion |
++----------+
+
+Recursion =  a way of solving a problem by having a function calling itself 
+
+- performing the same operations multiple times with different inputs 
+- In every step we make the input smaller so to make the problem smaller. 
+- Base condition is needed to stop the recursion, otherwise, infinite loop will occur. 
