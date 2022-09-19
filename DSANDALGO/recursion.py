@@ -1,11 +1,11 @@
-# Recusion example
+# Recursion example
 
-def openRussionDoll(doll):
+def openRussianDoll(doll):
     if doll == 1:
         print("All dolls are opened")
     else:
-        openRussionDoll(doll-1)
+        openRussianDoll(doll-1)
         print(f"doll {doll} opened")
 
 
-openRussionDoll(100)
+openRussianDoll(100)
