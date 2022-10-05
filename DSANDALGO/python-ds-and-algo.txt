@@ -104,7 +104,7 @@ Set of steps to accomplish a task
 
 How do google and facebook transmit live video across the internet 
 - using compression algorithms 
-- Finding the shortest path on the map.. djisktra algorithms 
+- Finding the shortest path on the map.. Djisktra algorithms 
 - They are used in space tech as well  
 - Selecting the proper algorithm will help us accomplish great tasks 
 
@@ -116,8 +116,8 @@ How do google and facebook transmit live video across the internet
 | Why are they important |
 +------------------------+
 
-the ability of algorithms and datastructures are too high 
-that they save a lot of time and effort in acommplishing a certain tasks 
+the ability of algorithms and data structures are too high 
+that they save a lot of time and effort in accomplishing a certain tasks 
 
 +----------+
 | Recursion |
@@ -128,3 +128,51 @@ Recursion =  a way of solving a problem by having a function calling itself
 - performing the same operations multiple times with different inputs 
 - In every step we make the input smaller so to make the problem smaller. 
 - Base condition is needed to stop the recursion, otherwise, infinite loop will occur. 
+
+How Recursion Works ? 
+
+Here is a sample syntax on how recursion works 
+
+- 
+
+def recursionMethod(parameters):
+    if exit from condition satisfied:
+        return some_value 
+    else: 
+        recursionMethod(modified_parameters)
+
+Note that this is working in a stack memory. 
+In a stack the first goes last and the last goes first which is FILO 
+
++-----------------------------------+
+| Recursion vs Iterative solutions  |
++-----------------------------------+
+
+Recursion vs Iterative solutions... 
+
+Recursion is not space efficient or time efficient 
+The only benefit is recursion is easy to code.
+
++----------------------------------------------------------+
+|When to use recursion and when not to use recursion....???|
++----------------------------------------------------------+
+
+When to use it ? 
+
+- When we can easily breakdown a problem into a similar subproblem 
+- When we are find with extra overhead (both time and space) that comes with it 
+- When we need a quick working solution instead of efficient one. 
+- When we traverse in a tree... 
+
+When not to use it ....
+
+- if time and space complexity matters for us 
+- Recursion uses more memory. If we use Embedded memory. 
+For example an application that takes more memory in the phone is not efficient 
+- Recursion is slow 
+
++------------------------------+
+| Writing Recursion in 3 steps |
++------------------------------+
+
+
