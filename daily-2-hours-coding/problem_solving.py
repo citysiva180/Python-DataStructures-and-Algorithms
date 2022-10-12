@@ -4,9 +4,11 @@ import collections as col
 
 
 def find_numbers(num_list):
-    if (19 in num_list or 5 in num_list):
+    if (19, 5 in num_list):
         new_arr = col.Counter(num_list)
-    final = True if new_arr[19] >= 3 or new_arr[5] >= 3 else False
+        final = True if new_arr[19] >= 3 or new_arr[5] >= 3 else False
+    else:
+        final = False
     return final
 
 
@@ -18,4 +20,4 @@ print(find_numbers(option_1))
 print(find_numbers(option_2))
 print(find_numbers(option_3))
 
-# Minifying the solution.... 
+# Minifying the solution....
