@@ -1,0 +1,99 @@
+██████╗ ███████╗     █████╗ ███╗   ██╗██████╗      █████╗ ██╗      ██████╗  ██████╗                   ██████╗ ██╗   ██╗████████╗██╗  ██╗ ██████╗ ███╗   ██╗
+██╔══██╗██╔════╝    ██╔══██╗████╗  ██║██╔══██╗    ██╔══██╗██║     ██╔════╝ ██╔═══██╗                  ██╔══██╗╚██╗ ██╔╝╚══██╔══╝██║  ██║██╔═══██╗████╗  ██║
+██║  ██║███████╗    ███████║██╔██╗ ██║██║  ██║    ███████║██║     ██║  ███╗██║   ██║    █████╗        ██████╔╝ ╚████╔╝    ██║   ███████║██║   ██║██╔██╗ ██║
+██║  ██║╚════██║    ██╔══██║██║╚██╗██║██║  ██║    ██╔══██║██║     ██║   ██║██║   ██║    ╚════╝        ██╔═══╝   ╚██╔╝     ██║   ██╔══██║██║   ██║██║╚██╗██║
+██████╔╝███████║    ██║  ██║██║ ╚████║██████╔╝    ██║  ██║███████╗╚██████╔╝╚██████╔╝                  ██║        ██║      ██║   ██║  ██║╚██████╔╝██║ ╚████║
+╚═════╝ ╚══════╝    ╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝     ╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝                   ╚═╝        ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
+
+
+Commit to git daily!! :  goal 21st Nov 2022
+
++-----------------------------------------------+
+| Introduction -  Learning Everything in Python |
++-----------------------------------------------+
+
+Goal:  you should be able to write code of any ds or algo without reference 
+This way you commit to complete this course. Once we complete this course we could proceed 
+with the data structure and algorithm 40 hours course.. 
+
++-----------------------------------+
+| Starting with Coding and Learning |
++-----------------------------------+
+
+Coding Editor :  So I have VS Code. Stay with this... 
+
+
++-----------------------------------+
+| The Asymptotic Big - O - Notation |
++-----------------------------------+
+
+Big-O :  Big O is way of comparing 2 code. So if 2 code 
+accomplish the same thing but how do you compare? Big O comes here. 
+
+Big-O Worst case : 
+
+The Worst Case comes to a picture when your algorithm performs to its worst. 
+Meaning a boundary condition or a scenario where the data for the code, or the number of operation increases 
+or memory space increases. Now there are notation where you categorize the algorithms
+
+Omega - The best case
+Theta - The Average Case
+Omicron - Worst Case 
+
++-------------------------------------------------------------+
+| o(n) operations -  Number of times increases if N increases |
++-------------------------------------------------------------+
+
+The O(n) on plotting on a graph brings out line with a slop of 45 degree angle 
+Meaning, if your count increases the number of operation increases. So as 
+higher count comes into picture, your algorithm might suffer through time complexity 
+and takes up higher processing power. 
+
+
+O(n) -  Operations increases with Number 
+----------------------------------------
+
+When you consider or write asymptotic notation you don't have to worry on how many times 
+the code is repeated but focus on the operations which the code run 
+
+O(n)^2 - Operations Geometrically increases with Number 
+--------------------------------------------------------
+ 
+When the operations have nested elements within, then we go to o(n)^2 which is what 
+makes the algorithms to have a steeper curve in the time complexity of the code. 
+
+under circumstances where there is an o(n) and o(n)^2 we always go for the dominant operational notation
+Ensure to take this into account 
+
+O(1) - Operations does not increases with Number
+------------------------------------------------
+
+In this case you might be wondering what would constitute a big-o Omega equation. This notation would be O(1)
+o(1) will have only 1 operation no matter how man times it runs and it would be the most optimal code. 
+
+O(log n) - Where your operations reduces in half for better results 
+-------------------------------------------------------------------
+
+Reduced number of operations means reduced memory consumption which could improve algorithms in terms of search 
+If the approach is taken linearly.. say we need to print a million records, then it has to go through million operations 
+But on the other hand, if a million is split into individual chucks of smaller elements its relatively faster to 
+print all the elements. This is the concept behind O(log n) operations 
+
+On checking a graph, its observed that o-log-n has a curve similar to that of O(1) but progresses narrowly up. 
+
+O(a) and O(b) = > O(a+b)
+
+This happens when a code has 2 different parameters 
+
+For a nested forloop with different params 
+we get O(a * b)
+
+
+O(n)^2 -  A Loop within a loop 
+O(n)   -  Proportional Algorithm 
+O(log n) - Divide and Conquer 
+O(1)   -  Constant 
+
+
+
+
