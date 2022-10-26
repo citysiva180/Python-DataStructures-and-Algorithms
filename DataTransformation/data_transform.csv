@@ -1,8 +1,8 @@
 SNO,CATEGORY,DESCRIPTION,ORM SYNTAX,FUNCTIONALITY
-1,Managers and Queryset ,To get all rows in a table using ORM ,queryset = <TableName>.object.all(),You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. 
-2,Managers and Queryset ,To filter results from table ,queryset.filter(),"You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
-3,Managers and Queryset ,Using Order By in Django ORM,queryset.orderby(),You could order your results using the orderby 
-4,Managers and Queryset ,Getting the count,queryset = <TableName>.object.count(),gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. 
+1,Managers and Queryset,To get all rows in a table using ORM ,queryset = <TableName>.object.all(),You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. 
+2,Managers and Queryset,To filter results from table ,queryset.filter(),"You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+3,Managers and Queryset,Using Order By in Django ORM,queryset.orderby(),You could order your results using the orderby 
+4,Managers and Queryset,Getting the count,queryset = <TableName>.object.count(),gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. 
 5,Retriving Objects,To get a single row,queryset = <TableName>.object.get(),You could pass a look up parameter like id so it would come quick from the system. Here you could also use PK= which is primary key in the system. If Object is not found you would get an exception. Use the ObjectDoesNotExist Exception to solve this issue. 
 6,Retriving Objects,To get a single row based on a condition,product = <TableName>.objects.filter(pk=0).first(),Does the same thing but no need for adding exception class for this 
 7,Retriving Objects,Failsafe method to get a single row ,product = <TableName>.objects.filter(pk=0).exists(),This also checks if the object or row is present and then proceed with querying the data. These are the three major retrival functions 

@@ -1,0 +1,484 @@
+[
+    {
+        "Managers and Queryset": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Retriving Objects": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Filtering Objects": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Complex Queries": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Using F Objects for References ": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Sorting Data using ORM ": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Limiting Results using Django ORM ": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Selecting Field From Queries  ": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "DEFFERING FIELDS  ": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Selecting Related Objects": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Aggregate Object ": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Annotate Objects ": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Database Functions": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Group BY": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Working With Expression Wrappers": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Understanding QuerySet Cache ": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ]
+    }
+]

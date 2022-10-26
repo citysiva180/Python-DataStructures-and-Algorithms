@@ -1,0 +1,344 @@
+[
+    {
+        "Managers and Queryset": [
+            {
+                "SNO": "1",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To get all rows in a table using ORM ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()",
+                "FUNCTIONALITY": "You can iterate or use the list function to display all the data | You can also index the list to display a single or range of rows of data. "
+            },
+            {
+                "SNO": "2",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "To filter results from table ",
+                "ORM SYNTAX": "queryset.filter()",
+                "FUNCTIONALITY": "You could chain the filter method with another filter so you could filter from the results you got earlier. It will help in consecutive filtering, like, table of countries, filter 1 country and now, filter its states "
+            },
+            {
+                "SNO": "3",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Using Order By in Django ORM",
+                "ORM SYNTAX": "queryset.orderby()",
+                "FUNCTIONALITY": "You could order your results using the orderby "
+            },
+            {
+                "SNO": "4",
+                "CATEGORY": "Managers and Queryset",
+                "DESCRIPTION": "Getting the count",
+                "ORM SYNTAX": "queryset = <TableName>.object.count()",
+                "FUNCTIONALITY": "gets the count in a single row. Note that the returned value is just a single number. Hence further listing is not needed. "
+            }
+        ],
+        "Retriving Objects": [
+            {
+                "SNO": "5",
+                "CATEGORY": "Retriving Objects",
+                "DESCRIPTION": "To get a single row",
+                "ORM SYNTAX": "queryset = <TableName>.object.get()",
+                "FUNCTIONALITY": "You could pass a look up parameter like id so it would come quick from the system. Here you could also use PK= which is primary key in the system. If Object is not found you would get an exception. Use the ObjectDoesNotExist Exception to solve this issue. "
+            },
+            {
+                "SNO": "6",
+                "CATEGORY": "Retriving Objects",
+                "DESCRIPTION": "To get a single row based on a condition",
+                "ORM SYNTAX": "product = <TableName>.objects.filter(pk=0).first()",
+                "FUNCTIONALITY": "Does the same thing but no need for adding exception class for this "
+            },
+            {
+                "SNO": "7",
+                "CATEGORY": "Retriving Objects",
+                "DESCRIPTION": "Failsafe method to get a single row ",
+                "ORM SYNTAX": "product = <TableName>.objects.filter(pk=0).exists()",
+                "FUNCTIONALITY": "This also checks if the object or row is present and then proceed with querying the data. These are the three major retrival functions "
+            }
+        ],
+        "Filtering Objects": [
+            {
+                "SNO": "8",
+                "CATEGORY": "Filtering Objects",
+                "DESCRIPTION": "To find object greater than a number ",
+                "ORM SYNTAX": "queryset = <TableName>.object.filter(column_name__gt=20)",
+                "FUNCTIONALITY": "Note that gt means its greater than. And it comes with an equal. Also note that the double underscore is a mandatory field. Without it the code wont work. Goto https://docs.djangoproject.com/en/4.0/ref/models/querysets/#field-lookups for more field lookups like this"
+            },
+            {
+                "SNO": "9",
+                "CATEGORY": "Filtering Objects",
+                "DESCRIPTION": "To find objects within a range ",
+                "ORM SYNTAX": "query_set=<TableName>.objects.filter(column_name__range(x,y))",
+                "FUNCTIONALITY": "Helps in getting objects within a range "
+            },
+            {
+                "SNO": "10",
+                "CATEGORY": "Filtering Objects",
+                "DESCRIPTION": "To filter objects within a object attribute",
+                "ORM SYNTAX": "query_set=<TableName>.objects.filter(collection_id__range=(1,2,3))",
+                "FUNCTIONALITY": "Will find products in the product table with the collection id 1,2 and 3"
+            },
+            {
+                "SNO": "11",
+                "CATEGORY": "Filtering Objects",
+                "DESCRIPTION": "To filter an object with a column value or a string ",
+                "ORM SYNTAX": "query_set = <TableName>.objects.filter(title__icontains='coffee')",
+                "FUNCTIONALITY": "Remember, contains will bring out values and it would be case sensitive. If you need a case insensitive search use icontains instead of contains"
+            },
+            {
+                "SNO": "12",
+                "CATEGORY": "Filtering Objects",
+                "DESCRIPTION": "To filter an object which starts with a certain string ",
+                "ORM SYNTAX": "query_set = <TableName>.objects.filter(title__startswith='coffee')",
+                "FUNCTIONALITY": "There is also ends with or has etc. Checkout the django documentation for varied ORM functions to make this happen "
+            },
+            {
+                "SNO": "13",
+                "CATEGORY": "Filtering Objects",
+                "DESCRIPTION": "Using Date Time to find rows or objects",
+                "ORM SYNTAX": "query_set = <TableName>.objects.filter(title__last_update__year=2022)",
+                "FUNCTIONALITY": "you could also use date and other options "
+            },
+            {
+                "SNO": "14",
+                "CATEGORY": "Filtering Objects",
+                "DESCRIPTION": "To Filter data which has null values ",
+                "ORM SYNTAX": "query_set = <TableName>.objects.filter(description__isnull=True)",
+                "FUNCTIONALITY": "This would help you to find the rows with Null value "
+            }
+        ],
+        "Complex Queries": [
+            {
+                "SNO": "15",
+                "CATEGORY": "Complex Queries",
+                "DESCRIPTION": "Quering data with more than 1 conditions ",
+                "ORM SYNTAX": "query_set = <TableName>.objects.filter(column_1__<coditions such as lt or gt>=<numerical or string value>,column_2__<coditions such as lt or gt>=<numerical or string value> )",
+                "FUNCTIONALITY": "Filters values based on 2 conditions at a single shot "
+            },
+            {
+                "SNO": "16",
+                "CATEGORY": "Complex Queries",
+                "DESCRIPTION": "use Chain filtering to simplify the complex queries ",
+                "ORM SYNTAX": "# query_set = <TableName>.objects.filter(olumn_1__<coditions such as lt or gt>=<numerical or string value>).filter(column_2__<coditions such as lt or gt>=<numerical or string value>))",
+                "FUNCTIONALITY": "Filters values based on 2 conditions but consequently "
+            },
+            {
+                "SNO": "17",
+                "CATEGORY": "Complex Queries",
+                "DESCRIPTION": "using q class for complex queries using OR operator ",
+                "ORM SYNTAX": "query_set = <TableName>.objects.filter(Q(condition_1) | Q(condition_2)) ",
+                "FUNCTIONALITY": "Two conditions combined using the OR Operator "
+            },
+            {
+                "SNO": "18",
+                "CATEGORY": "Complex Queries",
+                "DESCRIPTION": "Filtering objects with And Operators ",
+                "ORM SYNTAX": "query_set = <TableName>.objects.filter(Q(condition_1) & ~Q(condition_2)) ",
+                "FUNCTIONALITY": "And Operators don\ufffdt need Q objects, you could directly apply your and operator with the ampersant symbol. Remember use the ~ symbol if you wish to negate the values in your query "
+            }
+        ],
+        "Using F Objects for References ": [
+            {
+                "SNO": "19",
+                "CATEGORY": "Using F Objects for References ",
+                "DESCRIPTION": "To reference a certain column based on other column, say if need to check we have no of cars has n number of parking spots etc we could use the F class to reference the models ",
+                "ORM SYNTAX": "query_set = <TableName>.objects.filter(column_1 = F('column_2))",
+                "FUNCTIONALITY": "Using these references you could identify data from 1 table to another for similar values . "
+            }
+        ],
+        "Sorting Data using ORM ": [
+            {
+                "SNO": "20",
+                "CATEGORY": "Sorting Data using ORM ",
+                "DESCRIPTION": "To Sort all the rows in ascending order ",
+                "ORM SYNTAX": "query_set = <TableName>.object.order_by('column_name')",
+                "FUNCTIONALITY": "To sort data in descending order just add the parameter as order_by('-column_name') which will solve the issue. "
+            },
+            {
+                "SNO": "21",
+                "CATEGORY": "Sorting Data using ORM ",
+                "DESCRIPTION": "To Sort all the rows with multiple parameters",
+                "ORM SYNTAX": "query_set = <TableName>.object.order_by('column_1','-column_2')",
+                "FUNCTIONALITY": "It will sort in ascending order based on 1 column and then in descending order based on the second column "
+            },
+            {
+                "SNO": "22",
+                "CATEGORY": "Sorting Data using ORM ",
+                "DESCRIPTION": "To sort all the rows but reverse the sort ",
+                "ORM SYNTAX": "query_set = <TableName>.object.order_by('column_1','-column_2').reverse()",
+                "FUNCTIONALITY": "Adding the reverse function will reverse the sort order of the query object "
+            },
+            {
+                "SNO": "23",
+                "CATEGORY": "Sorting Data using ORM ",
+                "DESCRIPTION": "To sort and get the first row in the Django ORM",
+                "ORM SYNTAX": "query_set = <TableName>.objects.order_by('unit_price')[0]",
+                "FUNCTIONALITY": "This will bring the 1st row of the sorted data "
+            },
+            {
+                "SNO": "24",
+                "CATEGORY": "Sorting Data using ORM ",
+                "DESCRIPTION": "To sort and get the first row in the Django ORM using earliest Method ",
+                "ORM SYNTAX": "query_set = <TableName>.objects.earliest('unit_price')",
+                "FUNCTIONALITY": "This will as well bring the first row of sorted data. Remember, order_by will bring a query_set but earliest will bring a constant "
+            }
+        ],
+        "Limiting Results using Django ORM ": [
+            {
+                "SNO": "25",
+                "CATEGORY": "Limiting Results using Django ORM ",
+                "DESCRIPTION": "To Limit the results based on a number ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()[:5]",
+                "FUNCTIONALITY": "This will bring first 5 rows of a table. It uses the Limit Syntax to make this happen "
+            },
+            {
+                "SNO": "26",
+                "CATEGORY": "Limiting Results using Django ORM ",
+                "DESCRIPTION": "To Get the results or get a segment of results with a staring point and an endpoint, say second page results ",
+                "ORM SYNTAX": "queryset = <TableName>.object.all()[5:10]",
+                "FUNCTIONALITY": "This will bring rows from 5 to 10 from the table. This also helps in adding range to which the data has to be queried "
+            }
+        ],
+        "Selecting Field From Queries  ": [
+            {
+                "SNO": "27",
+                "CATEGORY": "Selecting Field From Queries  ",
+                "DESCRIPTION": "To select only few columns from the query set we could use the values function",
+                "ORM SYNTAX": "query_set = Product.objects.values('id', 'title')",
+                "FUNCTIONALITY": "passing the column values as params to the values"
+            },
+            {
+                "SNO": "28",
+                "CATEGORY": "Selecting Field From Queries  ",
+                "DESCRIPTION": "To Select limited columns but from other tables as well",
+                "ORM SYNTAX": "query_set = Product.objects.values('id', 'title','collection__id')",
+                "FUNCTIONALITY": "Note that collection is a different table. The query puller or the ORM value function will do an inner join and join different tables and pull the data back. Note we would be getting dictionary as the queried result "
+            },
+            {
+                "SNO": "29",
+                "CATEGORY": "Selecting Field From Queries  ",
+                "DESCRIPTION": "by Using Values__list you will get a tuple instead of a dictionary ",
+                "ORM SYNTAX": "query_set = Product.objects.values_list('id', 'title','collection__id')",
+                "FUNCTIONALITY": "using Value list will give us a tuple of elements that we need. "
+            },
+            {
+                "SNO": "30",
+                "CATEGORY": "Selecting Field From Queries  ",
+                "DESCRIPTION": "To get distinct values from a query set",
+                "ORM SYNTAX": "query_set = <TableName>.objects.values('product_id').distinct()",
+                "FUNCTIONALITY": "using the distinct function will give us distinct rows for the column mentioned "
+            },
+            {
+                "SNO": "31",
+                "CATEGORY": "Selecting Field From Queries  ",
+                "DESCRIPTION": "Subqueries using django ORM ",
+                "ORM SYNTAX": " query_set = Product.objects.filter(id__in = OrderItem.objects.values('product_id').distinct())",
+                "FUNCTIONALITY": "By nesting some ORM queries within other queries we could achieve getting / retriving our desired results "
+            }
+        ],
+        "DEFFERING FIELDS  ": [
+            {
+                "SNO": "32",
+                "CATEGORY": "DEFFERING FIELDS  ",
+                "DESCRIPTION": "To defer the loading of certain field to later ",
+                "ORM SYNTAX": "query_set = <TableName>.objects.defer('column_1')",
+                "FUNCTIONALITY": "Doing this will bring all the data from table, except, the ones mentioned in the defer function "
+            }
+        ],
+        "Selecting Related Objects": [
+            {
+                "SNO": "33",
+                "CATEGORY": "Selecting Related Objects",
+                "DESCRIPTION": "Using Select Related Function to pre-load the columns that we need it quickly ",
+                "ORM SYNTAX": "query_set = Product.objects.select_related('collection').all()",
+                "FUNCTIONALITY": "It helps to pre-load the objects togather. If values function is used, its going to take up the entire table and clog your memory "
+            },
+            {
+                "SNO": "34",
+                "CATEGORY": "Selecting Related Objects",
+                "DESCRIPTION": "Pre-loading multiple columns with select_related ",
+                "ORM SYNTAX": "query_set = Product.objects.select_related('column_1__column_2').all()",
+                "FUNCTIONALITY": "This helps in fetching more than 1 field in the fetch pre-load function "
+            },
+            {
+                "SNO": "35",
+                "CATEGORY": "Selecting Related Objects",
+                "DESCRIPTION": "Another way to load multiple associated fields, we could use the preload function",
+                "ORM SYNTAX": "query_set = Product.objects.prefetch_related('promotions').all()",
+                "FUNCTIONALITY": "Using Pre-fetch for quickly pre-loading related data "
+            },
+            {
+                "SNO": "36",
+                "CATEGORY": "Selecting Related Objects",
+                "DESCRIPTION": "Combining Prefetch and Select Related",
+                "ORM SYNTAX": "query_set = <TableName>.objects.prefetch_related('column_1').select_related('column_2').all()",
+                "FUNCTIONALITY": "Helps in pre-loading complex data piece. "
+            }
+        ],
+        "Aggregate Object ": [
+            {
+                "SNO": "37",
+                "CATEGORY": "Aggregate Object ",
+                "DESCRIPTION": "Aggregating Data | Count, Min, Max and Avg ",
+                "ORM SYNTAX": "result = <TableName>.aggregate(Count('column_name'))",
+                "FUNCTIONALITY": "Will help in executing aggregate values such as min, max, count and average. Use the key name like count=Count('column_name') for custom nameing "
+            },
+            {
+                "SNO": "38",
+                "CATEGORY": "Aggregate Object ",
+                "DESCRIPTION": "Aggregating Multiple Data ",
+                "ORM SYNTAX": "result = <TableName>.aggregate(count=Count('column_name'), min=Min('unit_price'))",
+                "FUNCTIONALITY": "Multiple fields for aggregating data"
+            }
+        ],
+        "Annotate Objects ": [
+            {
+                "SNO": "39",
+                "CATEGORY": "Annotate Objects ",
+                "DESCRIPTION": "Adding new columns based on expressions and values ",
+                "ORM SYNTAX": "query_set = <TableName>.objects.annotate(new_column_name=F(column_1)+1)",
+                "FUNCTIONALITY": "Using the annotate function you could add expressions, f objects and references to your newly created column. Note that for boolean, "
+            }
+        ],
+        "Database Functions": [
+            {
+                "SNO": "40",
+                "CATEGORY": "Database Functions",
+                "DESCRIPTION": "Referring database functions",
+                "ORM SYNTAX": "query_set = <TableName>.objects.annotate(new_column_name=Func(F('column_1'), Value(' '), F('column_2'), function='CONCAT'))",
+                "FUNCTIONALITY": "You need to use the Func function, then F objects Value Objects etc\ufffd "
+            },
+            {
+                "SNO": "41",
+                "CATEGORY": "Database Functions",
+                "DESCRIPTION": "Using Django In Built Concat function",
+                "ORM SYNTAX": "query_set = <TableName>.objects.annotate('column_1',Value(' '), 'column_2')",
+                "FUNCTIONALITY": "Syntax is much simple on using the inbuilt function. Remember, use django.db.models.functions to import Concat"
+            }
+        ],
+        "Group BY": [
+            {
+                "SNO": "42",
+                "CATEGORY": "Group BY",
+                "DESCRIPTION": "Using Group By Function",
+                "ORM SYNTAX": "query_set = <TableName>.objects.annotate(new_column_name=Count('column_name'))",
+                "FUNCTIONALITY": "I guess the count function helps you to do that and I get that it would work. "
+            }
+        ],
+        "Working With Expression Wrappers": [
+            {
+                "SNO": "43",
+                "CATEGORY": "Working With Expression Wrappers",
+                "DESCRIPTION": "Using the expression wrapper to give numerical and string expression to your query_set ",
+                "ORM SYNTAX": "desired_column_name = ExpressionWrapper(F('column_value') <Any Expression of your choice>, output_filed=DecimalFiled())\n query_set = Products.objects.annotate(column_intended = query_set)",
+                "FUNCTIONALITY": "You could split your expression to 2 part where you could get the column and output setting and then pass that expression into the annotate object to close the expression"
+            }
+        ],
+        "Understanding QuerySet Cache ": [
+            {
+                "SNO": "44",
+                "CATEGORY": "Understanding QuerySet Cache ",
+                "DESCRIPTION": "To implement cache ",
+                "ORM SYNTAX": "query_set = <TableName>.objects.all()\nlist(query_set)\nquery_set[0]",
+                "FUNCTIONALITY": "Note that converting the query_set from the list and then calling the list functions will keep your list in memory. This inturn will help you in accessing your data with much speed. Use this technique to implement cahce. However, if you do the opposite but getting the first list value and converting the list, your queries will be much slower. So be careful in implementing cache in django "
+            }
+        ]
+    }
+]
