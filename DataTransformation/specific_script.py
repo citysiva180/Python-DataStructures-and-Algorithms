@@ -7,24 +7,10 @@ path = r"/Users/shivthedev/Python-DataStructures-and-Algorithms/DataTransformati
 # Reading file
 
 df = pd.read_csv(path)
-# print(df.head(5))
 category_array = df["CATEGORY"].unique()
 print(category_array)
 
-# new_df = df.groupby("CATEGORY")
-
-
-# print(category_array)
-
-# ['Managers and Queryset' 'Retriving Objects' 'Filtering Objects'
-#  'Complex Queries' 'Using F Objects for References '
-#  'Sorting Data using ORM ' 'Limiting Results using Django ORM '
-#  'Selecting Field From Queries  ' 'DEFFERING FIELDS  '
-#  'Selecting Related Objects' 'Aggregate Object ' 'Annotate Objects '
-#  'Database Functions' 'Group BY' 'Working With Expression Wrappers'
-#  'Understanding QuerySet Cache ']
 new_dict = {}
-
 for items in category_array:
     new_dict[items] = []
 
@@ -33,7 +19,7 @@ print(new_dict)
 
 def transform_to_json(path, new_dict):
     json_array = []
-    temp_array = []
+
     json_dict = new_dict
 
     try:
@@ -41,13 +27,10 @@ def transform_to_json(path, new_dict):
             csv_dict_reader = csv.DictReader(csv_file, delimiter=",")
 
             for rows in csv_dict_reader:
-
                 for items in category_array:
                     if items == rows["CATEGORY"]:
                         json_dict[items].append(rows)
-                # print("Loop is running for the category : ", items)
-
-            #     json_dict[items] = temp_array
+                        
             json_array.append(json_dict)
 
         # convert python jsonArray to JSON String and write to file
