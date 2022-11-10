@@ -33,8 +33,8 @@ class DoublyLinkedList:
             self.head = new_node
             self.tail = new_node
         else:
-            self.tail.next = new_node
-            new_node.prev = self.tail
+            self.tail.next = new_node  # type: ignore
+            new_node.prev = self.tail  # type: ignore
             self.tail = new_node
         self.length += 1
 
@@ -51,9 +51,9 @@ class DoublyLinkedList:
             self.head = None
             self.tail = None
         else:
-            self.tail = self.tail.prev
-            self.tail.next = None
-            temp.prev = None
+            self.tail = self.tail.prev  # type: ignore
+            self.tail.next = None  # type: ignore
+            temp.prev = None  # type: ignore
 
         self.length -= 1
         return temp
@@ -64,8 +64,8 @@ class DoublyLinkedList:
             self.head = new_node
             self.tail = new_node
         else:
-            new_node.next = self.head
-            self.head.prev = new_node
+            new_node.next = self.head  # type: ignore
+            self.head.prev = new_node  # type: ignore
             self.head = new_node
         self.length += 1
         return True
@@ -80,9 +80,9 @@ class DoublyLinkedList:
             self.head = None
             self.head = None
         else:
-            self.head = self.head.next
-            self.head.prev = None
-            temp.next = None
+            self.head = self.head.next  # type: ignore
+            self.head.prev = None  # type: ignore
+            temp.next = None  # type: ignore
         self.length -= 1
         return temp
 
@@ -94,13 +94,13 @@ class DoublyLinkedList:
         temp = self.head
         if index < self.length/2:
             for _ in range(index):
-                temp = temp.next
+                temp = temp.next  # type: ignore
             return temp
         else:
             temp = self.tail
             # reverse loop
             for _ in range(self.length - 1, index, -1):
-                temp = temp.prev
+                temp = temp.prev  # type: ignore
             return temp
 
     def set(self, index, value):
@@ -117,16 +117,16 @@ class DoublyLinkedList:
         if index == 0:
             return self.length
         if index == self.length:
-            return self.append(value)
+            return self.append(value)  # type: ignore
 
         new_node = Node(value)
         before = self.get(index-1)
-        after = before.next
+        after = before.next  # type: ignore
 
-        new_node.prev = before
+        new_node.prev = before  # type: ignore
         new_node.next = after
-        before.next = new_node
-        after.prev = new_node
+        before.next = new_node  # type: ignore
+        after.prev = new_node  # type: ignore
 
     def remove_item(self, index):
         if index < 0 or index >= self.length:
@@ -134,13 +134,13 @@ class DoublyLinkedList:
         if index == 0:
             return self.pop_first()
         if index == self.length - 1:
-            return self.pop()
+            return self.pop()  # type: ignore
 
         temp = self.get(index)
-        temp.next.prev = temp.prev
-        temp.prev.next = temp.next
-        temp.next = None
-        temp.prev = None
+        temp.next.prev = temp.prev  # type: ignore
+        temp.prev.next = temp.next  # type: ignore
+        temp.next = None  # type: ignore
+        temp.prev = None  # type: ignore
 
         self.length -= 1
         return temp
@@ -198,7 +198,7 @@ ddl_1.print_list()
 print("Get - Reading an element at certain index")
 
 new_num = ddl_1.get(3)
-print(new_num.value)
+print(new_num.value)  # type: ignore
 
 # Insert
 

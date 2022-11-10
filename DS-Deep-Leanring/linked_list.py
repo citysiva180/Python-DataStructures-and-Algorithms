@@ -8,6 +8,8 @@ class Node:
     def __init__(self, value):
         self.value = value
         self.next = None
+
+
 class LinkedList:
 
     # Linked List Constructor
@@ -45,7 +47,7 @@ class LinkedList:
             # if you see... first we assign the tail.next to the new node which is Node(value)
             # self.tail = new_node is Node(value)
 
-            self.tail.next = new_node
+            self.tail.next = new_node  # type: ignore
             self.tail = new_node
 
         self.length += 1
@@ -64,13 +66,13 @@ class LinkedList:
         temp = self.head
         pre = self.head
 
-        while temp.next is not None:
+        while temp.next is not None:  # type: ignore
 
             pre = temp
-            temp = temp.next
+            temp = temp.next  # type: ignore
 
         self.tail = pre
-        self.tail.next = None
+        self.tail.next = None  # type: ignore
 
     def prepend(self, value):
         new_node = Node(value)
@@ -82,7 +84,7 @@ class LinkedList:
 
         else:
 
-            new_node.next = self.head
+            new_node.next = self.head  # type: ignore
             self.head = new_node
 
         self.length += 1
@@ -95,7 +97,7 @@ class LinkedList:
 
         temp = self.head
         self.head = self.head.next
-        temp.next = None
+        temp.next = None  # type: ignore
         self.length -= 1
 
         if self.length == 0:
@@ -108,7 +110,7 @@ class LinkedList:
             return None
         temp = self.head
         for _ in range(index):
-            temp = temp.next
+            temp = temp.next  # type: ignore
 
         return temp
 
@@ -137,8 +139,8 @@ class LinkedList:
 
         new_node = Node(value)
         temp = self.get(index - 1)
-        new_node.next = temp.next
-        temp.next = new_node
+        new_node.next = temp.next  # type: ignore
+        temp.next = new_node  # type: ignore
 
         self.length += 1
         return True
@@ -155,10 +157,10 @@ class LinkedList:
             return self.pop_item()
 
         pre = self.get(index - 1)
-        temp = pre.next
+        temp = pre.next  # type: ignore
 
-        pre.next = temp.next
-        temp.next = None
+        pre.next = temp.next  # type: ignore
+        temp.next = None  # type: ignore
 
         self.length -= 1
         return temp
@@ -194,7 +196,7 @@ class LinkedList:
         current.next = prev
 
         prev = current
-        current = next
+        current = next  # type: ignore
 
         self.head = prev
 
@@ -245,7 +247,7 @@ linked_list.print_list()
 
 print("getting elements")
 getting_elements = linked_list.get(2)
-print(getting_elements.value)
+print(getting_elements.value)  # type: ignore
 getting_elements = linked_list.get(-1)
 print(getting_elements)
 
