@@ -47,10 +47,10 @@ class Binary_Search_Tree:
                 if temp.left is None:
                     temp.left = new_node  # type: ignore
                     return True
-               
-                # A very important note would be that... if there is a value in the left of the system... then 
-                # we got to temp = temp.left which is again an iteration to the next element. This will go until the element comes to None     
-                
+
+                # A very important note would be that... if there is a value in the left of the system... then
+                # we got to temp = temp.left which is again an iteration to the next element. This will go until the element comes to None
+
                 temp = temp.left
             else:
                 if temp.right is None:
