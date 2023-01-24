@@ -20,15 +20,32 @@ class HashTable:
             self.data_map[index] = []
         self.data_map[index].append([key, value])
 
+    def get_item(self, key):
+        index = self.__hash(key)
+        if self.data_map[index] is not None:
+            for i in range(len(self.data_map[index])):
+                if self.data_map[index][i][0] == key:
+                    return self.data_map[index][i][1]
+            return None
+
+    def keys(self):
+        all_keys = []
+        for i in range(len(self.data_map)):
+            if self.data_map[i] is not None:
+                for j in range(len(self.data_map[i])):
+                    all_keys.append(self.data_map[i][j][0])
+
+        return all_keys
+
 
 # to get the ascii value numberically we could use the ord letter method
 # using the modulo,
 
 # You should always have a prime number
 # Prime number increases no of randomness reducing collisions
-
 # In hash, we upfront talk about the size and the allocation of values
 # to that size we add values with addresses... Also values would be dictionary or list
+
 
 my_hash_table = HashTable()
 
@@ -37,5 +54,8 @@ my_hash_table.set_item("bolts", 4000)
 my_hash_table.set_item("Nuts", 4000)
 my_hash_table.set_item("wires", 4000)
 my_hash_table.set_item("fibre Optics", 4000)
+
+print(my_hash_table.get_item('bolts'))
+print(my_hash_table.keys())
 
 my_hash_table.print_tables()
