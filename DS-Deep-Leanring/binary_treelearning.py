@@ -209,9 +209,8 @@ class BinarySearchTree:
 
         return current_node
 
-     # ==================#
-    #  RECURSIVE DELETE
-    # ==================#
+    def delete_node(self, value):
+        self.__delete_node(self.root, value)
 
 
 my_tree = BinarySearchTree()
@@ -230,3 +229,7 @@ print(my_tree.contains(15))
 
 print(my_tree.r_contains(3))
 print(my_tree.r_contains(34))
+
+my_tree.delete_node(2)
+
+print(my_tree.contains(2))
