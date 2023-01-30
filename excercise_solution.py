@@ -24,7 +24,7 @@ class LinkedList:
             self.head = new_node
             self.tail = new_node
         else:
-            self.tail.next = new_node
+            self.tail.next = new_node # type: ignore
             self.tail = new_node
         self.length += 1
         return True
@@ -44,11 +44,11 @@ class LinkedList:
         temp    = self.head
         pre     = self.head
         
-        while(temp.next):
+        while(temp.next): # type: ignore
             pre = temp
-            temp = temp.next 
+            temp = temp.next # type: ignore
         self.tail  = pre 
-        self.tail.next = None 
+        self.tail.next = None # type: ignore
         self.length -= 1 
         if self.length == 0:
             self.head = None 
@@ -60,9 +60,9 @@ class LinkedList:
 my_linked_list = LinkedList(1)
 my_linked_list.append(2)
 # (2) Items - Returns 2 Node
-print(my_linked_list.pop().value)
+print(my_linked_list.pop().value) # type: ignore
 # (1) Item -  Returns 1 Node
-print(my_linked_list.pop().value)
+print(my_linked_list.pop().value) # type: ignore
 # (0) Items - Returns None
 print(my_linked_list.pop())
 
