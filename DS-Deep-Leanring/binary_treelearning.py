@@ -31,6 +31,9 @@
 # Binary search tree - BIG O
 # 2^1 - 1
 
+# ===========#
+#  INSERT
+# ===========#
 
 class Node:
     def __init__(self, value):
@@ -52,6 +55,10 @@ class BinarySearchTree:
 #   if new_node  == temp return false : this is comparing an already existing element in the tree
 #   if < left else > right : that is... if less then insert in  left or if greater then insert in right element
 #   if there are no elements in the tree insert the new element else iterate to next
+
+    # ===========#
+    #  INSERT
+    # ===========#
 
     def insert(self, value):
         new_node = Node(value)
@@ -97,6 +104,10 @@ class BinarySearchTree:
                     return True
                 temp = temp.right
 
+    # ===========#
+    #  Contains
+    # ===========#
+
     def contains(self, value):
 
         # so if the root node is empty... it will return false. Meaning the tree itself is empty
@@ -123,6 +134,60 @@ class BinarySearchTree:
         return False
     # so it would break out of the code
 
+    # ===================#
+    #  RECURSIVE CONTAINS
+    # ===================#
+
+    def __r_contains(self, current_node, value):
+
+        if current_node == None:
+            return False
+
+        if value == current_node.value:
+            return True
+
+        if value < current_node.value:
+            return self.__r_contains(current_node.left, value)
+
+        if value > current_node.value:
+            return self.__r_contains(current_node.right, value)
+
+    def r_contains(self, value):
+        return self.__r_contains(self.root, value)
+
+    # ==================#
+    #  RECURSIVE INSERT
+    # ==================#
+
+    def __r_insert(self, current_node, value):
+        if current_node == None:
+            return Node(value)
+        if value < current_node.value:
+            current_node.left = self.__r_insert(current_node.left, value)
+        if value > current_node.value:
+            current_node.right = self.__r_insert(current_node.right, value)
+
+        return current_node
+
+    def r_insert(self, value):
+        if self.root == None:
+            self.root = Node(value)
+        self.__r_insert(self.root, value)
+
+    # ==================#
+    #  RECURSIVE DELETE
+    # ==================#
+
+    def __delete_node(self, current_node, value):
+
+        if current_node == None:
+            return None
+
+        if value < current_node.value:
+            current_node.left = self.__delete_node(current_node.left, value)
+
+        return current_node
+
 
 my_tree = BinarySearchTree()
 
@@ -137,3 +202,6 @@ print(my_tree.root.left.value)
 print(my_tree.root.right.value)
 print(my_tree.contains(1))
 print(my_tree.contains(15))
+
+print(my_tree.r_contains(3))
+print(my_tree.r_contains(34))

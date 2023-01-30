@@ -127,6 +127,9 @@ class DoublyLinkedList:
         new_node.next = after
         before.next = new_node  # type: ignore
         after.prev = new_node  # type: ignore
+        
+        self.length +=1 
+        return True
 
     def remove_item(self, index):
         if index < 0 or index >= self.length:
