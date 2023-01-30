@@ -96,7 +96,7 @@ class LinkedList:
             return None
 
         temp = self.head
-        self.head = self.head.next
+        self.head = self.head.next  # type:ignore
         temp.next = None  # type: ignore
         self.length -= 1
 
@@ -193,14 +193,12 @@ class LinkedList:
 
         while (current is not None):
             next = current.next
-        current.next = prev
+        current.next = prev  # type:ignore
 
         prev = current
         current = next  # type: ignore
 
         self.head = prev
-        
-        
 
 
 # Instantiating
